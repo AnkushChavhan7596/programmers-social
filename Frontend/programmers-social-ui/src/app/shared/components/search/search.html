@@ -1,0 +1,12 @@
+<div class="search-container">
+    <input type="text" placeholder="Search posts..." [value]="searchText()"
+        (input)="onInput($any($event.target).value)" (keyup.enter)="onEnter()" />
+
+    @if(isLoading()){
+    <!-- <span>Loading...</span> -->
+    }
+
+    @if(searchText()){
+    <button (click)="clear()">✕</button>
+    }
+</div>

@@ -1,0 +1,22 @@
+<nav>
+    <div class="logo-block">
+        <a [routerLink]="['/']" class="logo">ProgrammersMedia</a>
+    </div>
+    <div class="search">
+        <app-search (searchSubmit)="onSearch($event)" />
+    </div>
+    <div class="menu-items">
+        <div class="menu-item">
+            <mat-icon>add_box</mat-icon><span class="create">create</span>
+        </div>
+        <div class="menu-item">
+            <mat-icon class="profile-icon">person_pin</mat-icon>
+
+            @if (false) {
+            <!-- <img class="profile-img"
+                [src]=""> -->
+            }
+
+        </div>
+    </div>
+</nav>
