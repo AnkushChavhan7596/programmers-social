@@ -1,0 +1,23 @@
+<div class="home">
+    <div class="posts">
+        <app-post-card />
+        <app-post-card />
+    </div>
+    <div class="side-section">
+        <div class="fixed">
+            <!-- suggested users section -->
+            <div class="suggested-users-section">
+                <app-title [title]="suggestedUsersTitle" [navBtn]="navBtnTitle"
+                    (navBtnClick)="seeAllSuggestedUsers()" />
+                <app-suggested-users />
+            </div>
+
+            <!-- suggested posts section -->
+            <div class="suggested-posts-section">
+                <app-title [title]="suggestedPostsTitle" [navBtn]="navBtnTitle"
+                    (navBtnClick)="seeAllSuggestedPosts()" />
+                <app-suggested-posts />
+            </div>
+        </div>
+    </div>
+</div>

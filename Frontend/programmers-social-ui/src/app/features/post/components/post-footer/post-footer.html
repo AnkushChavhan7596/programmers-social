@@ -1,0 +1,16 @@
+<div class="post-footer">
+    <div class="like round">
+        <!-- <mat-icon [ngClass]="{ liked: liked() }">{{ liked() ? 'favorite' : 'favorite_border'}}</mat-icon>
+        <span class="count">21</span> -->
+        <app-vote 
+        [voteCount]="voteCount()"
+        (upvote)="upvoteClicked()"
+        (downvote)="downvoteClicked()"
+         />
+    </div>
+
+    <div class="comment round" (click)="toggleComments()">
+        <mat-icon>chat_bubble_outline</mat-icon>
+        <span class="count">{{ commentCount() }}</span>
+    </div>
+</div>

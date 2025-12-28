@@ -1,0 +1,16 @@
+<div class="post-card">
+    <app-post-header />
+    <app-post-body />
+    <app-post-footer 
+        [voteCount]="voteCount"
+        [commentCount]="commentCount"
+        (commentsClicked)="toggleComments()"
+    />
+
+    @if(isCommentsVisible()){
+    <div class="post-comments">
+        <app-post-comment [voteCount]="12" />
+        <app-post-comment />
+    </div>
+    }
+</div>

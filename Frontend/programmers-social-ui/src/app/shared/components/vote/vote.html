@@ -1,0 +1,5 @@
+<div class="vote">
+    <mat-icon (click)="upvoteClicked()">{{upvoted() ? 'thumb_up' : 'thumb_up_off_alt'}}</mat-icon>
+    <span class="count">{{ voteCount }}</span>
+    <mat-icon (click)="downvoteClicked()">{{downvoted() ? 'thumb_down' : 'thumb_down_off_alt'}}</mat-icon>
+</div>

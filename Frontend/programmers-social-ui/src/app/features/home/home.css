@@ -1,0 +1,49 @@
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.posts{
+    width: 700px;
+}
+
+.side-section{
+    width: 250px;
+    padding: 10px;
+}
+
+.fixed{
+    position: fixed;
+    top: 60px;
+    z-index: 99;
+}
+
+@media screen and (max-width: 1040px) {
+    .posts{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .posts{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .side-section{
+        display: none;
+    }
+
+    .home{
+        gap: 0px;
+    }
+
+    .posts{
+        width: 100%;
+        margin: 0 5px;
+    }
+}

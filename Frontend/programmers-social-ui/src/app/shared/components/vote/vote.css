@@ -1,0 +1,12 @@
+.vote{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.vote mat-icon{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}

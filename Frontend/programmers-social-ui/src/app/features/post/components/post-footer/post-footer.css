@@ -1,0 +1,40 @@
+.post-footer{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.like{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post-footer mat-icon{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.liked{
+    color: red;
+}
+
+.count{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.round{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.169);
+}
